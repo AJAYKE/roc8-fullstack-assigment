@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  background-color: #f4f5f9;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  gap: 10px;
+  overflow: auto;
+  margin-bottom: 30px;
+}
+
+.filters {
+  height: 20px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.filters button {
+  width: 80px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: #e1e4ea;
+  border: 1px solid;
+  border-radius: 10px;
+  padding: 3px 4px;
+  cursor: pointer;
+}
+
+.filters button.hover {
+  cursor: pointer;
+}
+
+.main-view {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+  gap: 20px;
+}
+
+.email-list {
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.email-body {
+  width: 125%;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #cfd2dc;
+  overflow-y: auto;
+}
+.hidden {
+  display: none;
+}
+
+.email-body-subject-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+  border: 1px solid #cfd2dc;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(240, 240, 240);
+}
+
+.email-item:hover {
+  cursor: pointer;
+}
+
+.avatar {
+  background-color: #e54065;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.email-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.email-meta div {
+  margin: 2px 0;
+}
+
+.read {
+  background-color: white;
+}
+
+.email-meta .favorite {
+  color: #e54065;
+  background-color: none;
+}
+.email-date-favourite-status {
+  display: flex;
+  gap: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #e1e4ea;
+}
+.pagination button:hover {
+  background-color: #e54065;
+  color: white;
+  cursor: pointer;
+}
+
+#favoriteBtn {
+  background-color: #e54065;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  border: 1px solid;
+  border-radius: 15px;
+  padding: 8px 10px;
+}
