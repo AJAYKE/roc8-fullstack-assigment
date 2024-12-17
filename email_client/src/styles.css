@@ -43,15 +43,16 @@ body {
 
 .main-view {
   display: flex;
-  flex: 1;
   overflow: auto;
   gap: 20px;
+  max-height: 650px;
 }
 
 .email-list {
   width: 100%;
   overflow-y: auto;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
   gap: 20px;
 }
@@ -60,8 +61,10 @@ body {
   width: 125%;
   display: flex;
   flex-direction: row;
+  flex-grow: 1.25;
   gap: 40px;
-  padding: 10px;
+  padding: 20px;
+  padding-bottom: 100px;
   background-color: #fff;
   border: 1px solid #cfd2dc;
   overflow-y: auto;
@@ -101,6 +104,7 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  min-width: 40px;
 }
 
 .email-meta {
