@@ -1,0 +1,31 @@
+.container {
+  font-family: "Quicksand", sans-serif;
+}
+.login {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.formTitle {
+  color: teal;
+  font-weight: bold;
+}
+
+.submitButton {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: teal;
+  color: white;
+  cursor: pointer;
+}
